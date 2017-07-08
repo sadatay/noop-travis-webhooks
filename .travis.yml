@@ -1,0 +1,4 @@
+language: ruby
+script: 'rake test_pass'
+notifications:
+  webhooks: http://webhook.site/f9073e06-05ec-4298-b598-ea28eddb6b9d
