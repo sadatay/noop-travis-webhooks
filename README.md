@@ -11,7 +11,7 @@ This is a barebones repo intended to emit TravisCI webhook notifications to a se
 If you're reading this and you're not me, you probably have no use for this.  But, if you wanted to adapt it for your own purposes:
 
 1. Fork this repo and enable TravisCI for your fork
-2. Spin up a tiny web app somewhere to accept the notification payloads (here's [mine](https://github.com/sadatay/trap-webhooks), which is based off of [this](https://github.com/travis-ci/webhook-signature-verifier))
+2. Spin up a tiny web app somewhere to accept the notification payloads (here's [mine](https://github.com/sadatay/trap-webhooks), which is based off of [this](https://github.com/travis-ci/webhook-signature-verifier)).  If you just want to see the requests, you could also point it towards a [webhook.site url](https://webhook.site/).
 3. Edit .travis.yml's `notifications.webhooks` directive to point to your tiny web app
 4. Edit .travis.yml's `script` directive to `'rake test_pass'` or `'rake test_fail'` depending on what kind of build notifications you want to simulate.
 5. Push your changes (or restart an existing Travis build) and, if all goes well, your tiny web app will receive some POST requests from TravisCI
