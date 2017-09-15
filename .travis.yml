@@ -1,4 +1,4 @@
 language: ruby
 script: 'rake test_pass'
 notifications:
-  webhooks: https://sadatay-capture-webhooks.herokuapp.com/travis
+  webhooks: https://fs-bitbot.herokuapp.com/travis
